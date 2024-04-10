@@ -5,9 +5,17 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RoutingModule } from './routing.module';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { ClientRegisterComponent } from './client-register/client-register.component';
+import { CostumerConsultationComponent } from './costumer-consultation/costumer-consultation.component';
 
 @NgModule({
   declarations: [
+    HomeComponent,
+    LoginComponent,
+    ClientRegisterComponent,
+    CostumerConsultationComponent,
   ],
   imports: [
     CommonModule,
@@ -15,7 +23,7 @@ import { RoutingModule } from './routing.module';
     FormsModule,
     MatTableModule,
     MatButtonModule,
-    MatTooltipModule
-  ]
+    MatTooltipModule,
+  ],
 })
 export class PagesModule {}

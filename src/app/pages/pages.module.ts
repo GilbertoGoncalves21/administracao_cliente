@@ -11,6 +11,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RoutingModule } from './routing.module';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { RoutingModule } from './routing.module';
     RoutingModule,
     FormsModule,
     MaterialModule,
+    MatCardModule,
     MatTableModule,
     MatButtonModule,
     MatTooltipModule,

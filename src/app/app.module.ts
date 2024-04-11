@@ -7,6 +7,7 @@ import { PagesModule } from './pages/pages.module';
 import { MatTableModule } from '@angular/material/table';
 import { MaterialModule } from './material/material.module';
 import { SharedModule } from './shared/shared.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SharedModule } from './shared/shared.module';
     SharedModule,
     MaterialModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

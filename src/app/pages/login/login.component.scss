@@ -1,0 +1,142 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #111111;
+  background-image: linear-gradient(
+    32deg,
+    rgba(8, 8, 8, 0.74) 30px,
+    transparent
+  );
+  background-size: 60px 60px;
+  background-position: -5px -5px;
+
+  .login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    H2{
+      font-family: monospace;
+      font-size: 2rem;
+      letter-spacing: 1.4rem;
+      color: white;
+    }
+
+    .input {
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .input-username {
+        font-family: monospace;
+        width: 300px;
+        height: 3rem;
+        outline: none;
+        border: 1px solid #dadada;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f3f7fe;
+        transition: 0.3s;
+        font-size: 1.5rem;
+        color: #3b82f6;
+
+        &:focus {
+          border: 1px solid #3b82f6;
+          box-shadow: 0 0 0 4px #3b83f65f;
+        }
+      }
+    }
+
+    .links {
+      max-width: 500px;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+
+      .btn {
+        width: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.9rem 1.8rem;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid rgb(70, 200, 252);
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+        font-family: inherit;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(70, 200, 252);
+        transform: translateX(-100%);
+        transition: all 0.3s;
+        z-index: -1;
+      }
+
+      .btn:hover::before {
+        transform: translateX(0);
+      }
+    }
+
+    .cancel-btn {
+      .btn {
+        margin-top: 1rem;
+        width: 8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.9rem 1.8rem;
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+        border: 3px solid rgb(252, 70, 100);
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        text-decoration: none;
+        overflow: hidden;
+        z-index: 1;
+        font-family: inherit;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(252, 70, 100);
+        transform: translateX(-100%);
+        transition: all 0.3s;
+        z-index: -1;
+      }
+
+      .btn:hover::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+

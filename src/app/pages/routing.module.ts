@@ -4,6 +4,7 @@ import { HomeComponent } from "./home/home.component";
 import { LoginComponent } from "./login/login.component";
 import { ClientRegisterComponent } from "./client-register/client-register.component";
 import { CostumerConsultationComponent } from "./costumer-consultation/costumer-consultation.component";
+import { ForgotPasswordComponent } from "./forgot-password/forgot-password.component";
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path: 'costumer-consultation',
     component: CostumerConsultationComponent
+  },
+  {
+    path:'forgot-password',
+    component: ForgotPasswordComponent
   }
 ];
 

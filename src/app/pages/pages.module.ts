@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { ClientRegisterComponent } from './client-register/client-register.component';
 import { CostumerConsultationComponent } from './costumer-consultation/costumer-consultation.component';
+import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { CostumerConsultationComponent } from './costumer-consultation/costumer-
     LoginComponent,
     ClientRegisterComponent,
     CostumerConsultationComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     CommonModule,

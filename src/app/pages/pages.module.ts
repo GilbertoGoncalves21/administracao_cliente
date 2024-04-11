@@ -10,6 +10,7 @@ import { LoginComponent } from './login/login.component';
 import { ClientRegisterComponent } from './client-register/client-register.component';
 import { CostumerConsultationComponent } from './costumer-consultation/costumer-consultation.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
+import { MaterialModule } from '../material/material.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
     CommonModule,
     RoutingModule,
     FormsModule,
+    MaterialModule,
     MatTableModule,
     MatButtonModule,
     MatTooltipModule,

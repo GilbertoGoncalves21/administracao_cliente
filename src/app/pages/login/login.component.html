@@ -1,28 +1,32 @@
 <div class="container">
-  <div class="login">
-    <h2>Login</h2>
-    <div class="input">
-      <input
-        placeholder="Username"
-        autocomplete="off"
-        class="input-username"
-        name="text"
-        type="text"
-      />
-      <input
-        type="password"
-        autocomplete="off"
-        name="text"
-        class="input-username"
-        placeholder="Password"
-      />
+  <mat-card-content>
+    <section class="card">
+    <div class="login">
+      <h2>Login</h2>
+      <div class="input">
+        <input
+          placeholder="Username"
+          autocomplete="off"
+          class="input-username"
+          name="text"
+          type="text"
+        />
+        <input
+          type="password"
+          autocomplete="off"
+          name="text"
+          class="input-username"
+          placeholder="Password"
+        />
+      </div>
+      <div class="links">
+        <a class="btn" routerLink="/forgot-password">Forgot Password</a>
+        <a class="btn" routerLink="">Sign Up</a>
+      </div>
+      <div class="cancel-btn">
+        <a class="btn" routerLink="">Cancelar</a>
+      </div>
     </div>
-    <div class="links">
-      <a class="btn" routerLink="/forgot-password">Forgot Password</a>
-      <a class="btn" routerLink="">Sign Up</a>
-    </div>
-    <div class="cancel-btn">
-      <a class="btn" routerLink="">Cancelar</a>
-    </div>
-  </div>
+  </section>
+  </mat-card-content>
 </div>

@@ -1,6 +1,7 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddClientDialogComponent } from './add-client-dialog/add-client-dialog.component';
+import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
   selector: 'app-client-register',
@@ -8,8 +9,6 @@ import { AddClientDialogComponent } from './add-client-dialog/add-client-dialog.
   styleUrls: ['./client.component.scss']
 })
 export class ClientComponent {
-
-  constructor(public dialog: MatDialog) {}
 
   clientes = [
     { nome: "João Silva", email: "joao.silva@example.com", descricao: "Analista de Dados com experiência em visualização e interpretação de dados." },
@@ -30,6 +29,21 @@ export class ClientComponent {
     { nome: "Carla Silva", email: "carla.silva@example.com", descricao: "Analista de Qualidade de Software com experiência em testes automatizados." },
   ];
 
+  private _dataSource = new MatTableDataSource(this.clientes);
+
+
+  constructor(public dialog: MatDialog) {}
+
+  @ViewChild('input') input: any;
+
+  get dataSource() {
+    return this._dataSource;
+  }
+
+  
+
+
+
   openDialog(cliente: any): void {
     const dialogRef = this.dialog.open(AddClientDialogComponent, {
       data: { cliente: cliente }
@@ -38,5 +52,15 @@ export class ClientComponent {
     dialogRef.afterClosed().subscribe(result => {
       console.log('O diálogo foi fechado');
     });
+  }
+
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value; // Cast para HTMLInputElement
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  clearFilter() {
+    this.input.value = ''; // Limpar o valor do input
+    this.applyFilter(new Event('')); // Aplicar filtro vazio para redefinir
   }
 }

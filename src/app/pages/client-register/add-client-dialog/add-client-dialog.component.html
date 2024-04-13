@@ -2,8 +2,21 @@
 <div mat-dialog-content>
   <div class="cliente-details">
     <h2>{{ cliente.nome }}</h2>
-    <p><strong>Email:</strong> {{ cliente.email }}</p>
-    <p><strong>Descrição:</strong> {{ cliente.descricao }}</p>
+    <p><strong>Sexo:</strong> {{ cliente.sexo }}</p>
+    <p><strong>Data de Nascimento:</strong> {{ cliente.dataNascimento | date }}</p>
+    <p><strong>Estado Civil:</strong> {{ cliente.estadoCivil }}</p>
+    <p><strong>Tipo Pessoa:</strong> {{ cliente.tipoPessoa }}</p>
+    <p><strong>Documento:</strong> {{ cliente.documento }}</p>
+
+    <h3>Endereços</h3>
+    <div *ngFor="let endereco of cliente.enderecos">
+      <p><strong>CEP:</strong> {{ endereco.cep }}</p>
+      <p><strong>Endereço:</strong> {{ endereco.endereco }}, {{ endereco.numero }}</p>
+      <p><strong>Complemento:</strong> {{ endereco.complemento }}</p>
+      <p><strong>Bairro:</strong> {{ endereco.bairro }}</p>
+      <p><strong>Cidade:</strong> {{ endereco.cidade }}</p>
+      <p><strong>Estado:</strong> {{ endereco.estado }}</p>
+    </div>
   </div>
 </div>
 <div mat-dialog-actions>

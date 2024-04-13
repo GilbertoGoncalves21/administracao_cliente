@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { Client } from '../clientes.list';
 
 @Component({
   selector: 'app-add-client-dialog',
@@ -7,24 +8,21 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./add-client-dialog.component.scss']
 })
 export class AddClientDialogComponent {
-  cliente: any;
 
   constructor(
     public dialogRef: MatDialogRef<AddClientDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { cliente: any }
-  ) {
-    this.cliente = data.cliente;
+    @Inject(MAT_DIALOG_DATA) public data: { cliente: Client }
+  ) { }
+
+  get cliente() {
+    return this.data.cliente
   }
 
   editarCliente(): void {
-    // Implemente a lógica para edição do cliente aqui
-    console.log('Editar cliente:', this.cliente);
-    // Feche o diálogo após editar o cliente
-    this.dialogRef.close();
+    console.log('Editar cliente');
   }
 
   fecharDialog(): void {
-    // Feche o diálogo sem realizar nenhuma ação
     this.dialogRef.close();
   }
 }

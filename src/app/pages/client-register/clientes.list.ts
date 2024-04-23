@@ -354,6 +354,216 @@ const clientes = [
         estado: "PA"
       }
     ]
+  },
+  {
+    nome: "Juliana Mendes",
+    email: "juliana.mendes@example.com",
+    descricao: "Designer Gráfica com ênfase em identidade visual e criação de marcas.",
+    sexo: "Feminino",
+    dataNascimento: new Date(1986, 7, 22),
+    estadoCivil: "Solteira",
+    documento: "234.567.890-12", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "45678-901",
+        endereco: "Av. N",
+        numero: "1400",
+        complemento: "Casa 4",
+        bairro: "Centro",
+        cidade: "Porto Seguro",
+        estado: "BA"
+      }
+    ]
+  },
+  {
+    nome: "Roberto Pereira",
+    email: "roberto.pereira@example.com",
+    descricao: "Engenheiro de Redes especializado em infraestrutura de data centers.",
+    sexo: "Masculino",
+    dataNascimento: new Date(1984, 4, 19),
+    estadoCivil: "Casado",
+    documento: "345.678.901-23", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "56789-012",
+        endereco: "Av. O",
+        numero: "1500",
+        complemento: "Apto 501",
+        bairro: "Centro",
+        cidade: "Fortaleza",
+        estado: "CE"
+      }
+    ]
+  },
+  {
+    nome: "Juliana Mendes",
+    email: "juliana.mendes@example.com",
+    descricao: "Designer Gráfica com ênfase em identidade visual e criação de marcas.",
+    sexo: "Feminino",
+    dataNascimento: new Date(1986, 7, 22),
+    estadoCivil: "Solteira",
+    documento: "234.567.890-12", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "45678-901",
+        endereco: "Av. N",
+        numero: "1400",
+        complemento: "Casa 4",
+        bairro: "Centro",
+        cidade: "Porto Seguro",
+        estado: "BA"
+      }
+    ]
+  },
+  {
+    nome: "Roberto Pereira",
+    email: "roberto.pereira@example.com",
+    descricao: "Engenheiro de Redes especializado em infraestrutura de data centers.",
+    sexo: "Masculino",
+    dataNascimento: new Date(1984, 4, 19),
+    estadoCivil: "Casado",
+    documento: "345.678.901-23", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "56789-012",
+        endereco: "Av. O",
+        numero: "1500",
+        complemento: "Apto 501",
+        bairro: "Centro",
+        cidade: "Fortaleza",
+        estado: "CE"
+      }
+    ]
+  },
+  {
+    nome: "Juliana Mendes",
+    email: "juliana.mendes@example.com",
+    descricao: "Designer Gráfica com ênfase em identidade visual e criação de marcas.",
+    sexo: "Feminino",
+    dataNascimento: new Date(1986, 7, 22),
+    estadoCivil: "Solteira",
+    documento: "234.567.890-12", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "45678-901",
+        endereco: "Av. N",
+        numero: "1400",
+        complemento: "Casa 4",
+        bairro: "Centro",
+        cidade: "Porto Seguro",
+        estado: "BA"
+      }
+    ]
+  },
+  {
+    nome: "Roberto Pereira",
+    email: "roberto.pereira@example.com",
+    descricao: "Engenheiro de Redes especializado em infraestrutura de data centers.",
+    sexo: "Masculino",
+    dataNascimento: new Date(1984, 4, 19),
+    estadoCivil: "Casado",
+    documento: "345.678.901-23", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "56789-012",
+        endereco: "Av. O",
+        numero: "1500",
+        complemento: "Apto 501",
+        bairro: "Centro",
+        cidade: "Fortaleza",
+        estado: "CE"
+      }
+    ]
+  },
+  {
+    nome: "Juliana Mendes",
+    email: "juliana.mendes@example.com",
+    descricao: "Designer Gráfica com ênfase em identidade visual e criação de marcas.",
+    sexo: "Feminino",
+    dataNascimento: new Date(1986, 7, 22),
+    estadoCivil: "Solteira",
+    documento: "234.567.890-12", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "45678-901",
+        endereco: "Av. N",
+        numero: "1400",
+        complemento: "Casa 4",
+        bairro: "Centro",
+        cidade: "Porto Seguro",
+        estado: "BA"
+      }
+    ]
+  },
+  {
+    nome: "Roberto Pereira",
+    email: "roberto.pereira@example.com",
+    descricao: "Engenheiro de Redes especializado em infraestrutura de data centers.",
+    sexo: "Masculino",
+    dataNascimento: new Date(1984, 4, 19),
+    estadoCivil: "Casado",
+    documento: "345.678.901-23", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "56789-012",
+        endereco: "Av. O",
+        numero: "1500",
+        complemento: "Apto 501",
+        bairro: "Centro",
+        cidade: "Fortaleza",
+        estado: "CE"
+      }
+    ]
+  },
+  {
+    nome: "Juliana Mendes",
+    email: "juliana.mendes@example.com",
+    descricao: "Designer Gráfica com ênfase em identidade visual e criação de marcas.",
+    sexo: "Feminino",
+    dataNascimento: new Date(1986, 7, 22),
+    estadoCivil: "Solteira",
+    documento: "234.567.890-12", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "45678-901",
+        endereco: "Av. N",
+        numero: "1400",
+        complemento: "Casa 4",
+        bairro: "Centro",
+        cidade: "Porto Seguro",
+        estado: "BA"
+      }
+    ]
+  },
+  {
+    nome: "Roberto Pereira",
+    email: "roberto.pereira@example.com",
+    descricao: "Engenheiro de Redes especializado em infraestrutura de data centers.",
+    sexo: "Masculino",
+    dataNascimento: new Date(1984, 4, 19),
+    estadoCivil: "Casado",
+    documento: "345.678.901-23", // CPF
+    tipoPessoa: "Física",
+    enderecos: [
+      {
+        cep: "56789-012",
+        endereco: "Av. O",
+        numero: "1500",
+        complemento: "Apto 501",
+        bairro: "Centro",
+        cidade: "Fortaleza",
+        estado: "CE"
+      }
+    ]
   }
 ];
 

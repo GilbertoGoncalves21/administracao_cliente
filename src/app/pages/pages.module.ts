@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MaterialModule } from '../material/material.module';
-import { AddClientDialogComponent } from './client-register/add-client-dialog/add-client-dialog.component';
+import { AddClientDialogComponent } from './client-register/client-dialog/add-client-dialog.component';
 import { ClientComponent } from './client-register/client.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';

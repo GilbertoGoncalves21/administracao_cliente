@@ -1,6 +1,6 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { AddClientDialogComponent } from './add-client-dialog/add-client-dialog.component';
+import { AddClientDialogComponent } from './client-dialog/add-client-dialog.component';
 import { MatTableDataSource } from '@angular/material/table';
 import { CLIENTES } from './clientes.list';
 

@@ -16,8 +16,8 @@ import { MatDialogModule } from '@angular/material/dialog';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PagesModule,
     SharedModule,
+    PagesModule,
     MaterialModule,
     BrowserAnimationsModule,
     MatTableModule,

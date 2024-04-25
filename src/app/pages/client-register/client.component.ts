@@ -3,6 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddClientDialogComponent } from './client-dialog/add-client-dialog.component';
 import { MatTableDataSource } from '@angular/material/table';
 import { CLIENTES } from './clientes.list';
+import { AddButtonComponent } from 'src/app/shared/add-button/add-button.component';
+
 
 @Component({
   selector: 'app-client-register',

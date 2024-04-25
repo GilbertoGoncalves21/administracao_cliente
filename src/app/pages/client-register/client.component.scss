@@ -42,4 +42,26 @@
       align-items: flex-start;
     }
   }
+
+  .add-button{
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 1000;
+  
+    button {
+      padding: 10px 20px; /* Espaçamento interno do botão */
+      background-color: #007bff; /* Cor de fundo do botão (exemplo: azul) */
+      color: #ffffff; /* Cor do texto do botão (exemplo: branco) */
+      border: none; /* Sem borda */
+      border-radius: 5px; /* Borda arredondada */
+      cursor: pointer; /* Mostra o cursor como ponteiro ao passar por cima */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+
+      &:hover {
+        background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+      }
+    }
+  }
 }
+

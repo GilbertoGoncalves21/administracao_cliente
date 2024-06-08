@@ -8,6 +8,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MaterialModule } from './material/material.module';
 import { SharedModule } from './shared/shared.module';
 import { MatDialogModule } from '@angular/material/dialog';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MaterialModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

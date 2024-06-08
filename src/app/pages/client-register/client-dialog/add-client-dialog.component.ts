@@ -10,19 +10,5 @@ import { Client } from '../clientes.list';
 export class AddClientDialogComponent {
 
   constructor(
-    public dialogRef: MatDialogRef<AddClientDialogComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: { cliente: Client }
   ) { }
-
-  get cliente() {
-    return this.data.cliente
-  }
-
-  editarCliente(): void {
-    console.log('Editar cliente');
-  }
-
-  fecharDialog(): void {
-    this.dialogRef.close();
-  }
 }

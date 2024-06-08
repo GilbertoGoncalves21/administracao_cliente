@@ -1,9 +1,7 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
-import { AddClientDialogComponent } from './client-dialog/add-client-dialog.component';
-import { MatTableDataSource } from '@angular/material/table';
-import { CLIENTES } from './clientes.list';
-import { AddButtonComponent } from 'src/app/shared/add-button/add-button.component';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ClientService } from './client.service';
+import { Client } from './clientes.list';
 
 
 @Component({
@@ -11,37 +9,20 @@ import { AddButtonComponent } from 'src/app/shared/add-button/add-button.compone
   templateUrl: './client.component.html',
   styleUrls: ['./client.component.scss']
 })
-export class ClientComponent {
+export class ClientComponent implements OnInit {
 
-  private _dataSource = new MatTableDataSource(CLIENTES);
+  clients$: Observable<Client[]> | undefined;
+  columnsTable: string[] = ['id', 'name']
 
-  constructor(public dialog: MatDialog) {}
+  constructor(
+    private clientService: ClientService,
+  ) {}
 
-  @ViewChild('input') input: any;
-
-  get dataSource() {
-    return this._dataSource;
+  ngOnInit(): void {
+    this.listClient();
   }
 
-  openDialog(cliente: any): void {
-    const dialogRef = this.dialog.open(AddClientDialogComponent, {
-      data: { cliente: cliente },
-      width: '70%',
-      height: '60&'
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('O diálogo foi fechado');
-    });
-  }
-
-  applyFilter(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource.filter = filterValue.trim().toLowerCase();
-  }
-
-  clearFilter() {
-    this.input.value = ''; 
-    this.applyFilter(new Event('')); 
+  listClient() {
+    this.clients$= this.clientService.list();
   }
 }

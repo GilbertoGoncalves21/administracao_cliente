@@ -1,3 +1,13 @@
-table {
-  width: 100%;
+:host{
+
+  .register-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
+  }
+
+  table {
+    width: 100%;
+  }
 }

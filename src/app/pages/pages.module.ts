@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { SharedModule } from '../shared/shared.module';
-import { AddClientDialogComponent } from './client-register/client-dialog/add-client-dialog.component';
+import { ClientDialogComponent } from './client-register/client-dialog/client-dialog.component';
+import { ClientRegisterDailogComponent } from './client-register/client-register-dailog/client-register-dailog.component';
 import { ClientComponent } from './client-register/client.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RoutingModule } from './routing.module';
-import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,8 @@ import {MatTableModule} from '@angular/material/table';
     LoginComponent,
     ClientComponent,
     ForgotPasswordComponent,
-    AddClientDialogComponent,
+    ClientDialogComponent,
+    ClientRegisterDailogComponent
   ],
   imports: [
     CommonModule,

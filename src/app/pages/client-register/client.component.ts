@@ -12,7 +12,7 @@ import { Client } from './clientes.list';
 export class ClientComponent implements OnInit {
 
   clients$: Observable<Client[]> | undefined;
-  columnsTable: string[] = ['id', 'name']
+  columnsTable: string[] = ['id', 'nome']
 
   constructor(
     private clientService: ClientService,

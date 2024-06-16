@@ -1,13 +1,12 @@
-:host{
-
-  .register-btn{
+:host {
+  .register-btn {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 16px;
   }
 
-  table {
+  mat-table {
     width: 100%;
   }
 }

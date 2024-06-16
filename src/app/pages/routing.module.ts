@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { ClientDialogComponent } from "./client-register/client-dialog/client-dialog.component";
+import { ClientEditRegisterComponent } from "./client-register/client-dialog/client-edit-register.component";
 import { ClientComponent } from "./client-register/client.component";
 import { ForgotPasswordComponent } from "./forgot-password/forgot-password.component";
 import { HomeComponent } from "./home/home.component";
@@ -22,11 +22,11 @@ const routes: Routes = [
   },
   {
     path: 'client/register',
-    component: ClientDialogComponent
+    component: ClientEditRegisterComponent
   },
   {
     path: 'client/edit/:nome',
-    component: ClientDialogComponent,
+    component: ClientEditRegisterComponent,
     resolve: {
       client: ClientResolverService
     }

@@ -1,22 +1,18 @@
-import { Component, Inject } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'confirm-dialog',
   template: `
-    <mat-dialog-content>
-      <p>{{ data.message }}</p>
-    </mat-dialog-content>
-    <mat-dialog-actions align="end">
-      <button mat-button [matDialogClose]="false">Cancelar</button>
-      <button mat-button [matDialogClose]="true">Confirmar</button>
-    </mat-dialog-actions>
+    <h1 mat-dialog-title>Confirmação</h1>
+    <div mat-dialog-content>
+      <p>Confirma a operação?</p>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button [mat-dialog-close]="false">Cancelar</button>
+      <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Confirmar</button>
+    </div>
   `,
 })
 export class ConfirmDialogComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: ConfirmData) {}
-}
-
-interface ConfirmData {
-  message: string;
+  constructor() { }
 }

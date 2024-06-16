@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ClientService } from './client.service';
-import { Client } from './clientes.list';
+import { Client } from './clientes';
 
 
 @Component({
@@ -12,7 +12,7 @@ import { Client } from './clientes.list';
 export class ClientComponent implements OnInit {
 
   clients$: Observable<Client[]> | undefined;
-  columnsTable: string[] = ['id', 'nome']
+  columnsTable: string[] = ['nome', 'documento']
 
   constructor(
     private clientService: ClientService,

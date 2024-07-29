@@ -20,14 +20,8 @@
   </form>
   <section class="line-btn">
     <button mat-raised-button color="primary" [disabled]="!formGroup.valid">Salvar</button>
-    <button 
-      *ngIf="client && client.id" 
-      type="button" 
-      color="warn" 
-      mat-raised-button 
-      (click)="deletar()"
-    >
-    Deletar
+    <button *ngIf="client && client.id" type="button" color="warn" mat-raised-button (click)="deletar()">
+      Deletar
     </button>
     <button type="button" mat-raised-button routerLink="/client">Cancelar</button>
   </section>

@@ -16,13 +16,13 @@ export class ClientComponent implements OnInit {
 
   constructor(
     private clientService: ClientService,
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.listClient();
   }
 
   listClient() {
-    this.clients$= this.clientService.list();
+    this.clients$ = this.clientService.list();
   }
 }

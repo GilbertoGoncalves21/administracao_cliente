@@ -16,7 +16,7 @@ export class ClientResolverService implements Resolve<Client> {
     if (id) {
       return this.clientService.searchForId(id);
     }
-    
+
     return empty();
   }
 }

@@ -3,27 +3,26 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MaterialModule } from '../material/material.module';
 import { SharedModule } from '../shared/shared.module';
-import { ClientEditRegisterComponent } from './client-register/client-dialog/client-edit-register.component';
-import { ClientComponent } from './client-register/client.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
 import { RoutingModule } from './routing.module';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
     HomeComponent,
-    LoginComponent,
-    ClientComponent,
-    ForgotPasswordComponent,
-    ClientEditRegisterComponent,
+    LoginComponent
   ],
   imports: [
     CommonModule,
     RoutingModule,
-    FormsModule,
     MaterialModule,
-    SharedModule
+    SharedModule,
+    FormsModule,
+    AngularFireAuthModule,
+    AngularFireDatabaseModule
   ],
 })
 export class PagesModule {}
